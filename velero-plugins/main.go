@@ -8,7 +8,7 @@ import (
 
 func main() {
 	veleroplugin.NewServer().
-		RegisterRestoreItemAction("openshift.io/01-common-restore-plugin", newCommonRestorePlugin).
+		RegisterRestoreItemAction("mtc.openshift.io/01-common-restore-plugin", newCommonRestorePlugin).
 		Serve()
 }
 

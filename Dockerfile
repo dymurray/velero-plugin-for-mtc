@@ -14,12 +14,12 @@
 FROM quay.io/konveyor/builder as builder
 ENV GOPATH=$APP_ROOT
 ENV BUILDTAGS containers_image_ostree_stub exclude_graphdriver_devicemapper exclude_graphdriver_btrfs containers_image_openpgp exclude_graphdriver_overlay include_gcs include_oss
-ENV BIN velero-plugins
+ENV BIN velero-plugin-for-mtc
 WORKDIR $APP_ROOT/src/github.com/migtools/velero-plugin-for-mtc
 COPY --chown=1001 go.mod go.sum $APP_ROOT/src/github.com/migtools/velero-plugin-for-mtc/
 RUN go mod download
 COPY --chown=1001 . $APP_ROOT/src/github.com/migtools/velero-plugin-for-mtc
-RUN go build -installsuffix "static" -tags "$BUILDTAGS" -o _output/$BIN ./$BIN
+RUN go build -installsuffix "static" -tags "$BUILDTAGS" -o _output/$BIN ./velero-plugins
 
 FROM registry.access.redhat.com/ubi8-minimal
 RUN mkdir /plugins
