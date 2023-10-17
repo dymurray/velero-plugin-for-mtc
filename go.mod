@@ -8,7 +8,7 @@ require (
 	github.com/hashicorp/go-hclog v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.9.0
 	github.com/vmware-tanzu/velero v1.11.0
-	k8s.io/api v0.25.6 // indirect
+	k8s.io/api v0.25.6
 	k8s.io/apimachinery v0.25.6
 	k8s.io/client-go v0.25.6 // indirect
 	k8s.io/utils v0.0.0-20220728103510-ee6ede2d64ed // indirect
@@ -45,12 +45,11 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/spf13/cobra v1.4.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	golang.org/x/crypto v0.1.0 // indirect
-	golang.org/x/net v0.7.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20220608161450-d0670ef3b1eb // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/term v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
+	golang.org/x/term v0.13.0 // indirect
+	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/time v0.0.0-20220609170525-579cf78fd858 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20220623142657-077d458a5694 // indirect
